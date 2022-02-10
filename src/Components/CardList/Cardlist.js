@@ -14,6 +14,8 @@ export default function Cardlist() {
   return (
     <div>
         {data}
+        
+      <div>{data}</div>
     </div>
     
   )
