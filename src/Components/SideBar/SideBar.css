@@ -1,0 +1,10 @@
+.SideBar-Container{
+    display: fixed;
+    top:60px;
+    z-index: 1;
+    width: 150px;
+    height: 90vh;
+    background-color: rgb(132, 101, 161);
+    position: sticky;
+
+}
