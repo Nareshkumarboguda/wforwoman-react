@@ -1,15 +1,20 @@
 import './App.css';
-import Cardlist from './Components/CardList/Cardlist';
+import CardList from './Components/CardList/CardList';
 import Header from './Components/Header/Header';
 import SideBar from './Components/SideBar/SideBar';
+import {useState} from 'react';
 
 function App() {
+  const [filter, setFilter] = useState("")
   return (
     <div className="App">
-     <Header/>
-     <Cardlist/>
-     <SideBar/>
      
+     <SideBar  setFilter={setFilter}/>
+     
+     <Header/>
+     
+    
+     <CardList filter={filter}/>
     </div>
   );
 }
