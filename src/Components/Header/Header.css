@@ -6,6 +6,7 @@ h1{
     height: 80px;
     background-color: rgb(205, 158, 248);
     width: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
     z-index: 1;
+    margin-top: 0px;
 }
