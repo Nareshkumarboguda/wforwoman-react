@@ -2,15 +2,10 @@ import React from 'react'
 
 
 
-export default function PriceList({setFilter}) {
-    const handleChange =(e)=>{
-        if(e.currentTarget.checked){
-            setFilter(e.currentTarget.value)
-        }else{
-            setFilter("")
-        }
+export default function PriceList({handleChange}) {
+
         
-        }
+        
   return (<div className='dropdown-btn-list'>
   <input type="checkbox" name ="Rs.0 to Rs.2000" value="selling_price-Rs.0%20to%20Rs.4000" onChange={handleChange}/>
   <label for="Rs.0 to Rs.2000" >Rs.0 to Rs.2000</label><br></br>

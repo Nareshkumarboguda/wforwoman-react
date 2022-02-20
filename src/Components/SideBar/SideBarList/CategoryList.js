@@ -1,15 +1,8 @@
 import React from 'react'
 
-export default function CategoryList({setFilter}) {
+export default function CategoryList({handleChange}) {
 
-const handleChange =(e)=>{
-    if(e.currentTarget.checked){
-        setFilter(e.currentTarget.value)
-    }else{
-        setFilter("")
-    }
-    
-    }
+
 
 
   return (<div className='dropdown-btn-list'>
